@@ -47,6 +47,22 @@ a {
     cursor: pointer;
 }
 
+.section-heading {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.section-desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
 /* Header */
 .header {
     min-height: 100vh;
@@ -229,4 +245,150 @@ a {
 .hero__img:last-child {
     width: 210px;
     height: 410px;
+}
+
+/* Service */
+.service {
+    padding: 170px 0;
+}
+
+.service__heading,
+.service__desc {
+    text-align: center;
+}
+
+.service__desc {
+    width: 468px;
+    /* Không để margin vì có thể bị ghi đè */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service__row {
+    margin-top: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.service__list {
+    margin-bottom: 55px;
+}
+
+.service-item {
+    display: flex;
+    width: 470px;
+    padding: 22px;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    /* Khi hover vào thì chuyển hiệu ứng trong vòng 0.25s */
+    transition: 0.25s;
+}
+
+.service-item:hover {
+    /* Đặt position để bóng đổ đè lên trên item dính sát vào nhau */
+    position: relative;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item__icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #eff6fd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    color: #10375c;
+    /* Khi hover vào thì chuyển hiệu ứng trong 0.25s */
+    transition: 0.25s;
+}
+
+.service-item:hover .service-item__icon {
+    color: #fff;
+    background-color: #2e80ce;
+}
+
+.service-item__body {
+    margin-left: 19px;
+}
+
+.service-item__heading {
+    color: #10375c;
+    font-size: 1.8rem;
+    line-height: 1.27;
+    font-weight: 600;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+/* Work */
+.work {
+    background: #f6fbff;
+    padding: 100px 0;
+}
+
+.work-desc {
+    width: 468px;
+}
+
+.work__list {
+    /* Khi Các Item Đều Nhau Thì Dùng Display Grid  */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-top: 70px;
+}
+
+.work-item {
+    background-color: #fff;
+    border: 16px solid #eaf6ff;
+    border-radius: 4px;
+    padding: 44px;
+    transition: 0.25s;
+}
+
+.work-item:hover {
+    /* Dịch chuyển lên trên */
+    transform: translateY(-16px);
+    border-color: #2e80ce;
+}
+
+.work-item__heading {
+    margin-top: 20px;
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.work-item__desc {
+    width: 254px;
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.work-item__more {
+    display: inline-block;
+    margin-top: 18px;
+    color: #2e80ce;
 }
