@@ -392,3 +392,134 @@ a {
     margin-top: 18px;
     color: #2e80ce;
 }
+
+/* Feature */
+.feature {
+    margin-top: 85px;
+    padding: 85px;
+}
+
+.feature__inner {
+    display: flex;
+    column-gap: 130px;
+    align-items: center;
+}
+
+.feature__media {
+    width: 48%;
+    /* Cái còn lại không phải 52% đâu nhé */
+    /* Còn có cả margin nữa */
+}
+
+.feature__images {
+    position: relative;
+    padding-bottom: 121px;
+    padding-right: 58px;
+}
+
+.feature__img {
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.feature__img:last-child {
+    width: 332px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* Nếu để padding-bottom: -121 */
+    /* Thì sẽ bị va chạm với các thành phần khác bên dưới */
+    /* Đem padding-bottom lên để vào thẻ cha */
+    /* tương tự với padding-right */
+}
+
+.feature__cta {
+    margin-top: 38px;
+}
+
+/* Member */
+.member {
+    padding: 85px 0;
+    text-align: center;
+}
+
+.member__header {
+    display: flex;
+    flex-direction: column;
+    /* Cái nút bị tràn sang 2 bên */
+    /* Dùng cái này thì nút sẽ nằm ngay giữa và đúng kích thước */
+    align-items: center;
+}
+
+.member__cta {
+    margin-top: 38px;
+}
+
+.member__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+.member-item__img-bg {
+    position: relative;
+    border-radius: 6px;
+    background: #eaf6ff;
+    width: 270px;
+    height: 318px;
+}
+
+.member-item__thumb {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* Do một số ảnh có kích thước chênh lệch 1 vài px */
+    /* Dùng max-width sẽ không bị mất ảnh */
+    max-width: 262px;
+    height: 290px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.member-item__name {
+    font-weight: 500;
+    margin-top: 12px;
+    color: #10375c;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.member-item__title {
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.86;
+}
+
+.member__control {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 18px;
+}
+
+.member__control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    outline: none;
+    background: #fff;
+    transition: 0.25s;
+}
+.member__control-btn:hover {
+    border: #2e80ce;
+    background-color: #2e80ce;
+    cursor: pointer;
+}
