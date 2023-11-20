@@ -389,7 +389,7 @@ a {
 
 .work-item:hover {
     /* Dịch chuyển lên trên */
-    transform: translateY(-16px);
+    transform: translateY(-6px);
     border-color: #2e80ce;
 }
 
@@ -687,4 +687,34 @@ a {
     color: #10375c;
     font-size: 1.4rem;
     font-weight: 500;
+}
+
+/* Appointment */
+.appointment {
+    margin: 85px 0 170px;
+}
+
+.appointment__heading::after {
+    content: "";
+    display: inline-block;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+}
+
+.appointment__inner {
+    border-radius: 4px;
+    background: #f6fbff;
+    padding: 100px 179px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.appointment__desc {
+    font-size: 1.6rem;
+    max-width: 617px;
+    margin-bottom: 38px;
 }
